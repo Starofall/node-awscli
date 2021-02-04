@@ -6,3 +6,5 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy python-pip apt-transport-https nodejs build-essential
 RUN pip install awscli
 RUN npm install -g npm@latest
+RUN npm config set ignore-scripts true
+RUN npm install -g @angular/cli@11.1.2
